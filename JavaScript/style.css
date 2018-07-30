@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+}
+
+#title {
+	padding-top:100px;
+	color:#F00;
+	text-align:center;
+}
+
+#state {
+	color:gray;
+}
+
+.wrapper {
+	padding-bottom:50px;
+}
+
+.container {
+	text-align:center;
+	padding:10px;
+	border:solid;
+}

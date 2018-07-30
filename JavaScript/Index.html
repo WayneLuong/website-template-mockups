@@ -1,0 +1,162 @@
+<doctype html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>JavaScript</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="custom.js"></script>
+
+</head>
+
+ <!-- Javascript on body tag-->
+<body onLoad= "var username = prompt('What is your name?'); confirm('Are you sure your name is ' + username + '?'); alert('Hello ' + username);" onResize="changeLight()">
+<div class="wrapper" style="text-align:center">
+	 <img id="bulb" onClick="changeImage()" style="display:inline"
+	 src="images/pic_bulboff.gif" width="100" height="180">
+ 	<h1 id="title" style="display:inline">JavaScript</h1>
+ </div>
+
+ <!-- Date/Time-->
+ <div class="container">
+ 		<button id="time" onClick="time()">Time and Date</button>
+ 		<p id="showTime"></p>  
+ </div>
+ <br>
+ 
+  <!-- Validating numbers-->
+ <div class="container">
+ 	<p>Input number between 1-10</p>
+    <input id="num" type="number">
+    <button type="button" onClick="num()">Submit</button>
+    <p id="demo"></p>
+ </div>
+ <br>
+ 
+  <!-- manipulating arrays-->
+ <div class="container">
+ 	<p>Arrays</p>
+    <p id="array" ></p>
+     <p id="numArray" ></p>
+     
+	<script>
+    var person = ["John", "Jane", "Harry"];
+	document.getElementById("array").innerHTML = "String Array: " + person.valueOf();
+	var num = [23, 1.5, 100, 29, 967];
+	document.getElementById("numArray").innerHTML = "Num Array: " + num.valueOf();
+	
+	function stringSort() {
+		person.sort();
+		document.getElementById("array").innerHTML = "Alphabetically sorted: "+person;
+	}
+		function numSort() {
+		num.sort(function (a,b){return a-b});
+		document.getElementById("numArray").innerHTML = "Ascending sorted: "+num;
+	}
+			function dnumSort() {
+		num.sort(function (a,b){return b-a});
+		document.getElementById("numArray").innerHTML = "descending sorted: "+num;
+	}
+	
+	function addElement() {
+		var add = document.getElementById("add").value;
+		person[person.length] = add;
+		document.getElementById("array").innerHTML = person;
+	}
+    </script>
+    <button onClick="stringSort()">Sort String Array Alphabetically</button>
+    <button onClick="numSort()">Sort Number Array ascending</button>
+    <button onClick="dnumSort()">Sort Number Array descending</button>
+    <br>  
+    <input id="add" type="text">
+    <button type="submit" onClick="addElement()">Add element</button>
+ </div>
+ <br>
+ 
+ <!-- Return a string-->
+ <div class="container">
+     <p>Return a value</p>
+     <input id="search" type="search">
+    <button type="submit" onClick="search()">Search</button>
+    <p id="displayArray"></p>
+ </div>
+ <br>
+ 
+  <!-- Change style of images and text based on events-->
+ <div class="container">
+ 	<p>Changing css based on events</p>
+ 	<img id="light" src="images/pic_bulboff.gif" onClick="alertme()">
+    <p id="state" onMouseOver="changeColour()" onMouseOut="changeBack()" >Hover me</p>
+	      <p id="first"> This is a paragraph</p>
+    <p id="second"> This is a paragraph</p>
+    <p id="third"> This is a paragraph</p>
+    <form name="formex">
+    <input type="checkbox" name="firstP" onClick="showPara()"/>First Paragraph <br/>
+    <input type="checkbox" name="secondP" onClick="showPara()"/>Second Paragraph <br/>
+    <input type="checkbox" name="thirdP" onClick="showPara()"/>Third Paragraph <br/>
+    </form>
+	<script>
+		function showPara() {
+			document.getElementById("first").style.visibility=(document.formex.firstP.checked) ? "hidden": "visible";
+			document.getElementById("second").style.visibility=(document.formex.secondP.checked) ? "hidden": "visible";
+			document.getElementById("third").style.visibility=(document.formex.thirdP.checked) ? "hidden": "visible";
+		}
+	</script>
+ </div>
+ <br>
+ 
+ 
+   <!--Track mouse movements
+ <div class="container">
+ 	<p>Mouse movements</p>
+    <form name = "mouse">
+    <input type="text" id="mousex"/>Mouse X position<br/>
+     <input type="text" name="mousey"/>Mouse Y position<br/>
+     <input type="text" id="mouseButton"/>Mouse clicked<br/>
+     <input type="text" name="keyPress"/>Key press<br/>
+     </form>
+     
+     <script>
+	 //Check which browser you are using
+	  var mie = (navigator.appName == "Microsoft Internet Explorer")? true : false;
+	  if (!mie)
+		 {
+		 document.captureEvents(Event.MOUSEMOVE);
+		 document.captureEvents(Event.MOUSE);
+		 }
+		 
+		 document.onmousemove = mousePos();
+		 document.onmousedown = mouseClicked();
+		 document.formex.keypress.value=keyClicked
+	
+		 var mouseClicked = 0;
+		 var keyClicked = 0;
+		 var mouseX = 0;
+		 var mouseY = 0;
+		 
+		
+		 function mousePos(e) {
+		 	if (!mie)
+			{
+				console.log("done");
+				mouseX=e.pageX;
+				mouseY=e.pageY;
+			}
+			else
+			{
+				mouseX = event.clientX+document.body.scrollLeft;
+				mouseY = event.clientY+document.body.scrollTop;
+			}
+			
+			document.mouse.mousey.value = mouseY;
+				
+			document.mouse.mousex.value = mouseX;
+			return true;
+		 }
+		  function mouseClicked() {
+		 }
+	 </script>
+ </div>
+-->
+</body>
+</html>
