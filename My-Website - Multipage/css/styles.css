@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Default body CSS*/
+body {
+    padding-bottom: 60px;
+	height: 100%;
+	min-height:100%;
+	padding-top:50px;
+}
+
+/*Title brand CSS*/
+.navbar-brand
+{
+	font-weight:bold;
+	font-size:15px;
+	padding-top:15px;
+}
+
+/*Navbar inverse text color*/
+.navbar-inverse .navbar-text {
+	color:#FFF;
+}
+
+.column {
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+/*Jumbotron*/
+.jumbotron{
+	background-image:url(../assets/cover.jpg);
+	color:#FFF;
+	height:600px;
+	background-size:cover;
+}
+
+.section-heading-spacer{
+	background-color:#666;
+}
+
+/*Modal CSS*/
+.modal-backdrop {
+   background-color: black;
+}
+
+.modal-header {
+   background-color: white;
+   color:black;
+}
+
+.modal-body {
+   background-color: white;
+}
+
+.modal-footer {
+   background-color: white;
+}
+
+/*Panel CSS*/
+.page-header{
+	margin-top:0;
+}
+
+.panel-body{
+	padding-top:0;
+}
+
+/*featuredImage CSS*/
+.featuredImg{
+	margin-bottom:15px;
+}
+
+/*Modal x button CSS*/
+.close {
+	color: #3B3131; 
+    opacity: 1;
+}
+
