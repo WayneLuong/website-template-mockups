@@ -1,0 +1,17 @@
+{
+  "name": "apple-mockup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "sass-build": "sass ./src/scss:./dist --watch --style compressed",
+    "webpack-build": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.13.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
