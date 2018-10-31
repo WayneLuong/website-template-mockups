@@ -1,0 +1,14 @@
+{
+  "name": "ssapps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-start": "sass --watch ./src/scss:./src/css --style compressed"
+  },
+  "author": "Wayne Luong",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.14.3"
+  }
+}

@@ -1,0 +1,46 @@
+$primaryColor: #08b4da ;
+
+#home{
+    background-color: $primaryColor;
+    background-image: url(../img/banner.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding-top:90px;
+    margin: 0 auto 0 auto;
+    width: 100vw;
+}
+#header {
+    background-color: rgba(	8,180,218, 0.4);
+    color: #fff;
+    text-align: center; 
+    h1{
+        font-weight: bold;
+    }
+}
+
+.button {
+    color: #fff;
+    display: inline-block;
+    padding-bottom: 10px;
+    a{
+        color: #fff;
+        font-weight: bold;
+        font-size:1.5em;
+        display: inline-block;
+        text-decoration: none;
+        padding-top:32px;
+        height: 100px;
+        width:270px;
+
+        background-size: cover;
+        background: url(../img/button.png) no-repeat;
+
+        &:hover{
+            background: url(../img/button-after.png) no-repeat;
+            cursor:pointer;
+            transition: ease-in-out 0.5s;
+        }
+    }
+}

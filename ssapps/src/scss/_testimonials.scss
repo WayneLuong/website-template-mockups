@@ -1,0 +1,32 @@
+$primaryColor: #08b4da ;
+
+#testimonials {
+    h1{
+        color:$primaryColor;
+    }
+    p{
+        color:#AA9DBA;
+    }
+    .team-back{
+        #team-badge{
+            position: absolute;
+            z-index: -1;
+        }
+
+    }
+    .testimonial{
+        padding: 40px 20px 40px 20px;
+        text-align: center;
+        color: #fff;
+        background-image: url(../img/team-back.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        p{
+            color: #fff;
+        }
+        img{
+            width: 50%;
+        }
+    }
+}

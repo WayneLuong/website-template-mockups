@@ -1,0 +1,17 @@
+$primaryColor: #08b4da ;
+
+#pricing{
+    background-color: $primaryColor;
+    color: #fff;
+    text-align: center;
+    span{
+        font-weight: bold;
+    }
+
+    .package {
+        background-color: #fff;
+        color: #AA9DBA;
+        border: solid $primaryColor 5px;
+        border-radius: 10%;
+    }
+}

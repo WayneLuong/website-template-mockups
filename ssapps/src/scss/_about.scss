@@ -1,0 +1,21 @@
+$primaryColor: #08b4da ;
+
+#about{
+    padding-top:5%;
+    background-color: #F7F7F7;
+    h1{
+        font-size: 3rem;
+        color:$primaryColor;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 1.4em;
+        width: 73%;
+        margin: 1em auto 0;
+        color:#AA9DBA;
+    }
+    img{
+        width:50%;
+    }
+}
